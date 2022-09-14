@@ -103,7 +103,7 @@
                         console.log(twoNumbers(10,50))
 
 //=====================================================================================================================================
- // 5. Write a function that returns the sum of even numbers from 1 to 50.
+ // 7. Write a function that returns the sum of even numbers from 1 to 50.
 //=====================================================================================================================================
 
                             let sum=0
@@ -119,7 +119,7 @@
 
 
 //=====================================================================================================================================
-// 6. Print all the integers from 1 to 50? using while loop and for loop
+// 8. Print all the integers from 1 to 50? using while loop and for loop
 //=====================================================================================================================================
 
 
@@ -142,7 +142,7 @@
                                     //     f=f+1
                                     // }
 //=====================================================================================================================================
- 7.Create an array with odd integers from 1 to 50.
+ // 9.Create an array with odd integers from 1 to 50.
 //=====================================================================================================================================
 
                                     function oddIntgers() {
@@ -157,15 +157,15 @@
                                     console.log(oddIntgers())
 
 //=====================================================================================================================================
-6. Set negative array values to zero.
+10. Set negative array values to zero.
 	example [2, -3, 5, -9] ----> [2, 0 , 5, 0]
-7. Given an array, print max, min, and average values.
+11. Given an array, print max, min, and average values.
 
-8. Create a function that takes an array of numbers and returns both the minimum and maximum numbers, in that order.
+12. Create a function that takes an array of numbers and returns both the minimum and maximum numbers, in that order.
 	https://edabit.com/challenge/Q3n42rEWanZSTmsJm
 
-9.  Write a function that prints the first 10 integers on the console starting from the number 1 using the JavaScript for loop
+13.  Write a function that prints the first 10 integers on the console starting from the number 1 using the JavaScript for loop
 
-10. Write a function that takes a single number as an argument and prints the next 5 numbers in the console. Note: each output should be displayed on a new line.
+14. Write a function that takes a single number as an argument and prints the next 5 numbers in the console. Note: each output should be displayed on a new line.
 
 //=====================================================================================================================================
