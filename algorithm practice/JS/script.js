@@ -313,8 +313,8 @@ console.log(oddIntgers())
 //=====================================================================================================================================
 >>>>>>> 2d2e42fe33d78d22329c3071ec066223924f85af
 
-// /*
-
+// /*************************************************************************************************** */
+//
 // Question 1
 // ● Write a function that prints the first 10 integers on the console starting from the number 1 using
 // the JavaScript for loop.
@@ -327,7 +327,7 @@ console.log(oddIntgers())
 // }
 // printFirstTenNumbers()
 
-// /*
+// /************************************************************************************************* */
 
 // Question 2
 // ● Write a function that takes a single number as an argument and prints the next 5 numbers in the
@@ -362,7 +362,7 @@ console.log(oddIntgers())
 // };
 // printNextFiveWhileLoop(10);
 
-// /*
+// /******************************************************************************************** */
 // Question 3
 // ● Write a function that takes a single number and prints the sum of the next 10 numbers after the
 // given number.
@@ -385,7 +385,7 @@ console.log(oddIntgers())
 // let result = printSumOfTenNumbers("op");
 // console.log(result);
 
-/*
+/************************************************************************************* 
 Question 4
 ● Write a function that takes an array as an argument and prints every element of the array on the
 console.
@@ -403,7 +403,7 @@ Hello
 // }
 // let printAllArray=(i)=>i
 // printAllArray()
-
+/******************************************************************************************* */
 // Question 5
 // ● Write a function that takes an array as an argument and prints the total number of elements
 // found in the array. Hint: use a property of the Array object to solve this question.
@@ -422,6 +422,8 @@ Hello
 // }
 // findLengthOfArray([2,"hello","my","name is","kidus"])
 
+
+//#####################################################################################################
 // /*
 // Question 6
 // ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
@@ -456,10 +458,10 @@ Hello
 //   }
 //   console.log(sum);
 // }
-// printTheSumOfArray([10, "hh", 30]);
+// printTheSumOfArray([10, 20, 30]);
 
 // /*
-
+//##########################################################################################################
 // Question 7
 // ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
 // odd numbers of the array from the total sum of all even numbers and logs the result in the
@@ -511,7 +513,7 @@ Hello
 // }
 // subtractTheSumOfOddNumbersFromTheSumOfEvenArray([21,30,40,11,33,13,22])
 
-/*
+/************************************************************************************** 
 Question 8
 ● Write a function that takes an array as a parameter and logs in the console the elements that have
 even indexes only. Notice: this question is not asking you to log elements with even value, but
@@ -598,6 +600,8 @@ car
 
 // Questions 9 and 10 are dependent on the sampleArray provided below:
 // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+
+/************************************************************************************************* */
 // Question 9
 // Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
@@ -624,7 +628,7 @@ car
 //   }
 // };
 // removeLastElementOfArrayAndAddNewValue([5, 6, 99, 8, 76, 4, 68, 44], 32);
-
+/************************************************************************************************ */
 // Question 10
 // ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order
 // and prints the sorted array on the console
@@ -653,15 +657,15 @@ car
 
 // function sortGreatest(arr) {
 //   // manually sort array from largest to smallest:
-//   // loop forwards through array:
+//   
 //   for (let i = 0; i < arr.length; i++) {
-//     // loop through the array, moving forwards:
-//     // note in loop below we set `j = i` so we move on after finding greatest value:
+//     
+//     
 //     for (let j = i; j < arr.length; j++) {
 //       if (arr[i] < arr[j]) {
-//         let temp = arr[i]; // store original value for swapping
-//         arr[i] = arr[j]; // set original value position to greater value
-//         arr[j] = temp; // set greater value position to original value
+//         let temp = arr[i]; 
+//         arr[i] = arr[j]; 
+//         arr[j] = temp; 
 //       }
 //     }
 //   }
@@ -669,13 +673,13 @@ car
 // }
 
 // console.log(sortGreatest([5, 6, 99, 8, 76, 4, 68, 44]));
-// // => [ 1000, 12, 10, 9, 3, -11 ]
+
 // Sorting Least to Greatest
 // function sortLeast(arr) {
 //   // manually sort array from smallest to largest:
-//   // loop through array backwards:
+//  
 //   for (let i = arr.length-1; i >= 0; i--) {
-//     // loop again through the array, moving backwards:
+//    
 //     for (let j = i; j >= 0; j--) {
 //       if (arr[i] < arr[j]) {
 //         let temp = arr[i];
@@ -686,7 +690,7 @@ car
 //   };
 //   return arr;
 // };
-// console.log(sortLeast([10,9,1000,12,-11,3]));
+// console.log(sortLeast([5, 6, 99, 8, 76, 4, 68, 44]));
 
 /*
 // Questions on JavaScript objects
@@ -726,7 +730,7 @@ let evangadiClass = {
     },
   ],
 };
-/*
+/************************************************************************************************ */
 // Question 11
 // ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
 // console
@@ -738,7 +742,7 @@ let evangadiClass = {
 //   console.log(evangadiClass);
 // };
 // changeLentgthOfCoursTo5Month();
-/*
+/**************************************************************************************************** */
 // Question 12
 // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the
 // console
@@ -748,7 +752,7 @@ let evangadiClass = {
 //     console.log(evangadiClass.topicsCovered);
 // }
 // addBootstrapToTopicCoverd()
-
+/*********************************************************************************************************** */
 // Question 13
 // ● Write a function that takes the "evangadiClass" object as an argument and calculates the average
 // age of the class. Print the result on the console
@@ -782,7 +786,7 @@ let evangadiClass = {
 //   console.log(avg);
 // };
 // pritAverageAgeFromEvangadiStundents();
-
+//*************************************************************************************************************** */
 // Question 14
 // ● Write a function that takes the "evangadiClass" object as an argument and calculates the
 // percentage of male students in the class. Print the result on the console
