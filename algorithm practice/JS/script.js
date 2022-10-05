@@ -925,3 +925,397 @@ let evangadiClass = {
 // isEven(2882468);
 
 /*
+
+advanced Algorithm
+*/
+// Advanced JavaScript Algorithms - practice exercise
+// Question 1 Given an array of numbers, write a function that prints in the console another array
+// which contains all the even numbers in the original array, which also have even indexes only.
+// ○ Test 1: getOnlyEvens([1, 2, 3, 6, 4, 8]) prints [ 4]
+// ○ Test 2: getOnlyEvens([0, 1, 2, 3, 4]) prints [0, 2, 4]
+// */
+// /*
+// //even index and even element => store them on temp array variable: this our target
+// //declare a function
+// //need to loop through the array
+// //check the condtion if  the index and the element are even
+// //create a temp variable and store the element  on it
+
+// */
+// // function evenIndexOfEvenElement(arr) {
+// //   let temp = [];
+// //   for (i = 0; i < arr.length; i++) {
+// //     if (i % 2 == 0 && arr[i] % 2 == 0) {
+// //       temp.push(arr[i]);
+// //     }
+// //   }
+// //   return temp;
+// // }
+// // let result = evenIndexOfEvenElement([1, 2, 3, 6, 4, 8]);
+// // console.log(result);
+// //○ Test 1: getOnlyEvens([1, 2, 3, 6, 4, 8]) prints [ 4]
+// //○ Test 2: getOnlyEvens([0, 1, 2, 3, 4]) prints [0, 2, 4]
+
+// // const printEvenElementOnEvenIndex = (arr) => {
+// //   let evenElements = [];
+
+// //   for (i = 0; i < arr.length; i++) {
+// //     if (i % 2 == 0 && arr[i] % 2 == 0) {
+// //       evenElements.push(arr[i]);
+// //     }
+// //   }
+// //   return evenElements;
+// // };
+// // let result = printEvenElementOnEvenIndex([1, 2, 3, 6, 4, 8]);
+// // console.log(result);
+
+// // let evenElementOnEvenIndex = () => {
+// //   const arr = [1, 2, 3, 4, 5, 6];
+
+// //   for (num of arr) {
+// //     if (num % 2 === 0) {
+// //       // 0 for even numbers and 1 for odd numbers.
+// //       console.log(num);
+// //     }
+// //   }
+// // };
+
+// // evenElementOnEvenIndex();
+
+// //*********************************************************** */
+// // const printEvenElementOnEvenIndex = (arr) => {
+// //   let evenElements = [];
+// //   if (Array.isArray(arr) && arr.length !== []) {
+// //     for (i = 0; i < arr.length; i++) {
+// //       if (i % 2 == 0) {
+// //         if (arr[i] % 2 == 0) {
+// //           evenElements.push(arr[i]);
+// //         }
+// //       }
+// //     }
+
+// //     return evenElements;
+// //   } else if (evenElements.length === []) {
+// //     return "no even element on even index";
+// //   } else return "please provid array";
+// // };
+// // let result = printEvenElementOnEvenIndex([1, 3, 5, 8, 11, 88]);
+// // console.log(result);
+
+// /*
+// Question 2
+// ● Create a function that takes a two-digit number as an parameter and prints "Ok" in
+// the console if the given string is greater than its reversed digit version. If not, the
+// function will print "Not ok"
+// ○ Test 1: reverseCompare(72) prints "ok" because 72 > 27
+// ○ reverseCompare(23) prints "Not ok", because 23 is not greater than 32
+
+// // target => if the given number is gerter than the revesed one print OK print not OK if not
+// // create a function name revesed number
+// // for loop to loop through the digits
+// //
+// */
+// // function reev(n) {
+// //   let rev = 0;
+// //   let rem;
+
+// //   while (n != 0) {
+// //     rem = n % 10;
+// //     rev = rev * 10 + rem;
+// //     n = Math.floor(n / 10);
+// //     console.log(rev);
+// //     return n > rev ? "Okay" : "Not Okay";
+// //   }
+// // }
+
+// // console.log(reev(123));
+
+// // const reverse = (num) => parseInt(String(num).split("").reverse().join(""), 10);
+// // console.log(reverse(123));
+
+// /*
+// Question 3
+// ● Write a function that takes a positive integer and returns the factorial of the number.
+// Notes: The factorial of 0 is 1. Ex: factorial seven is : 1 × 2 × 3 × 4 × 5 × 6 × 7. The
+// factorial of any positive integer x is x * (x - 1) * (x - 2) * . . . . . . * 1 (ex: factorial of 4 is
+// 4 * 3 * 2 * 1 = 24)
+// ○ Test 1: returnFactorial(5) outputs 120
+// ○ Test 2: returnFactorial(6) outputs 720
+// ○ Test 3: returnFactorial(0) outputs 1
+
+// /*/
+
+// // const printFactorial = (num) => {
+// //   let result = 1;
+// //   if (typeof num === "number") {
+// //     for (i = 2; i <= num; i++) {
+// //       result = result * i;
+// //     }
+// //     return result;
+// //   } else return "please enter valid input";
+// // };
+// // console.log(printFactorial());
+
+// // recresion
+
+// // function factorial (num){
+// //   if(num<=0){
+// //     return 1}
+// //   return num*factorial(num-1)
+// // }
+// // console.log(factorial(5));
+// /*
+// Question 4 (Meera array)
+// ● A Meera array is defined to be an array containing only numbers as its elements and for
+// all n values in the array, the value n*2 is not in the array. So [3, 5, -2] is a Meera array
+// because 3*2, 5*2 or 2*2 are not in the array. But [8, 3, 4] is not a Meera array because
+// 2*4=8 and both 4 and 8 are elements found in the array. Write a function that takes an
+// array of numbered elements and prints “I am a Meera array” in the console if its array
+// does NOT contain n and also n*2 as value. Otherwise, the function prints “I am NOT a
+// Meera array”
+// ○ Test 1: checkMeera([10, 4, 0, 5]) outputs “I am NOT a Meera array” because 5 *
+// 2 is 10
+// ○ Test 2: checkMeera([7, 4, 9]) outputs “I am a Meera array”
+// ○ Test 1: checkMeera([1, -6, 4, -3]) outputs “I am NOT a Meera array” because -3
+// *2 is -6
+
+// */
+
+// // const meeraArray = (arr) => {
+// //   for (let i = 0; i < arr.length; i++) {
+// //     for (let j = 0; j < arr.length; j++) {
+// //       if (arr[i] == 2 * arr[j]) {
+// //         console.log(arr[i] == 2 * arr[j]);
+// //         return "I am not meera array";
+// //       }
+// //     }
+// //   }
+// //   return "meera aray";
+// // };
+
+// // console.log(meeraArray([1, 9, 4, -3]));
+
+// /******
+//  * Question 5 (Dual array)
+// ● Define a Dual array to be an array where every value occurs exactly twice. For example,
+// {1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5
+// occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two
+// times) Write a function named isDual that returns 1 if its array argument is a Dual array.
+// Otherwise it returns 0.*/
+
+// // function isDual(arr) {
+// // 	let occ;
+// // 	for (let i = 0; i < arr.length; i++) {
+// // 		occ = 0;
+// // 		for (let j = 0; j < arr.length; j++) {
+// // 			if (arr[i] == arr[j]) {
+// // 				occ++;
+// // 			}
+// // 		}
+// // 		if (occ != 2) {
+// // 			console.log(`${arr[i]} is occured ${occ} times`);
+// // 			return 0;
+// // 		}
+// // 	}
+// // 	return 1;
+// // }
+
+// // console.log(isDual([2, 5, 5]));
+
+// // const findDuplicates = (nums) => {
+// //   //To store the numbers that appeared twice
+// //   let result = [];
+
+// //   //Itearte each element
+// //   nums.forEach((val, ind, arr) => {
+// //     //Use the value as index
+// //     let temp = Math.abs(arr[ind]) - 1;
+
+// //     //If the number is already negative
+// //     //That means it has appeared once and this is its second time.
+// //     //So add it in the result
+// //     if (arr[temp] < 0) {
+// //       result.push(temp + 1);
+// //     }
+
+// //     //Multiply the element at the given index with negative number
+// //     arr[temp] *= -1;
+// //   });
+// //   return result.length == nums.length / 2 ? "Dual array" : "Not Dual Array";
+
+// //   return result;
+// // };
+// // console.log(findDuplicates([1, 1, 2, 2, 3, 3, 4, 4]));
+
+// /*
+// Question 6
+// ● Write a function that takes the number of seconds and returns the digital format clock
+// time as a string. Time should be counted from 00:00:00.
+// ○ Examples: digitalClock(5025) as "01:23:45" 5025 seconds is 1 hour, 23 mins, 45
+// secs.
+// ■ digitalClock(61201) as "17:00:01" No AM/PM. 24h format.
+// ■ digitalClock(87000) as "00:10:00" It's 00:10 next day
+//  */
+// // function convertsecondsToHMS(sec) {
+// //   sec = Number(sec);
+
+// //   let day = Math.floor(sec / (3600 * 24));
+// //   let hours = Math.floor((sec % (3600 * 24)) / 3600);
+// //   let minutes = Math.floor((sec % 3600) / 60);
+// //   let seconds = Math.floor(sec % 60);
+
+// //   if (day > 0) {
+// //     day = day + " day";
+// //     if (hours > 23) {
+// //       hours = hours % 24;
+// //     }
+// //     if (hours < 10) {
+// //       hours = "0" + hours;
+// //     }
+// //     if (minutes < 10) {
+// //       minutes = "0" + minutes;
+// //     }
+// //     if (seconds < 10) {
+// //       seconds = "0" + seconds;
+// //     }
+// //     return hours + ":" + minutes + ":" + seconds;
+// //   } else {
+// //     return hours + ":" + minutes + ":" + seconds;
+// //   }
+// // }
+// // console.log(convertsecondsToHMS("86000"));
+
+// //*****************hidden word************************************************************* */
+
+// //
+// // function hiddemWord(word) {
+// //   let expected = "";
+
+// //   for (let i = 0; i < word.length; i++) {
+// //     let character = word.charAt(i);
+// //     if (character == character.toLowerCase(i)) {
+// //       expected += character;
+// //     }
+// //   }
+// //   return expected;
+// // }
+// // console.log(hiddemWord("HlHIIoYIYIHvYHEUHe''YyHOJOJFoOFJUu"));
+
+// //**************ANOTHER WAY*************** */
+// // function hiddemWord(word) {
+// //   let expected = "";
+
+// //   for (let i = 0; i < word.length; i++) {
+// //     let myword = word.charCodeAt(i);
+// //     //console.log(myword);
+// //     if (myword >= 97 && myword <= 120) {
+// //       myword = String.fromCharCode(myword);
+// //       expected += myword;
+
+// //       //console.log(expected);
+// //     }
+// //   }
+// //   return expected;
+// // }
+// // console.log(hiddemWord("HbHIIeYIYIHtYHEUtHy"));
+
+// //******************************************************************************* */
+
+// /****************************************************************************** */
+
+// // function equilibrium(arr) {
+// //   var leftsum, rightsum;
+// //   if (arr.length % 2 == 0) {
+// //     return "No Equilibrium index";
+// //   } else
+// //   /*Check for indexes one by one until
+// //          an equilibrium index is found*/
+// //     for (let i = 0; i < arr.length; ++i) {
+// //       /*get left sum*/
+// //       leftsum = 0;
+// //       for (let j = 0; j < i; j++) leftsum += arr[j];
+
+// //       /*get right sum*/
+// //       rightsum = 0;
+// //       for (let j = i + 1; j < arr.length; j++) rightsum += arr[j];
+
+// //       /*if leftsum and rightsum are same,
+// //               then we are done*/
+// //       if (leftsum == rightsum) return i;
+// //     }
+
+// //   /* return  no equilibrium index is found*/
+// //   return "No equilibrium index found";
+// // }
+// // // Driver code
+
+// // console.log(equilibrium([10, 12, 5, 8, 9, 2, 11, 12, 10]))
+
+// const maxMin = (arr) => {
+//   var min = arr[0];
+//   let max = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (min > arr[i]) {
+//       min = arr[i];
+//     }
+//     if (max < arr[i]) {
+//       max = arr[i];
+//     }
+//   }
+//   console.log([max, min]);
+// };
+// maxMin([1, 5, 9, 44, 92]);
+
+// const fact = (x) => {
+//   let out = [];
+//   for (let i = 1; i <= x / 2; i++) {
+//     if (x % i == 0) {
+//       out.push(i);
+//     }
+//   }
+//   out.push(x);
+//   console.log(out);
+// };
+// fact(100);
+
+// const splitNumber = (num) => {
+//   if (Number.isInteger(num)) {
+//     if (num > 0 && num % 2 == 0) {
+//       console.log(num / 2, num / 2);
+//     } else if (num % 2 !== 0) {
+//       console.log(Math.floor(num / 2), Math.ceil(num / 2));
+//     }
+//   } else {
+//     console.log("please enter integer number");
+//   }
+// };
+
+// splitNumber(9);
+
+// function median(numbers) {
+//   // const sorted = Array.from(numbers).sort((a, b) => a - b);
+//   const middle = Math.floor(numbers.length / 2);
+
+//   if (numbers.length % 2 === 0) {
+//     return (numbers[middle - 1] + numbers[middle]) / 2;
+//   }
+
+//   return numbers[middle];
+// }
+
+// console.log(median([4, 5, 7, 2, 1, 33]));
+// let m = "";
+// for (let i = 1; i <= 5; i++) {
+//   let n = "";
+//   let b = "";
+//   let c = "";
+
+//   for (let j = 1; j <= 5; j++) {
+//     n = n + j;
+//     c = c + i;
+//     b = b + "*";
+//   }
+//   m += n + "|" + b + "|" + c + "\n";
+// }
+
+// console.log(m);
