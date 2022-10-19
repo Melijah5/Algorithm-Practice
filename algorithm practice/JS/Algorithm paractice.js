@@ -202,6 +202,8 @@ function arrySum(y) {
 }
 // console.log(arrySum())
 
+// *************************************************** OR *******************************************************************************
+
 function arrySum(y) {
   let sum = 0;
   for (let i = 0; i < y.length; i++) {
@@ -227,6 +229,8 @@ function add(new_element) {
 
 console.log(add("a"));
 
+// *************************************************** OR *******************************************************************************
+
 const workye = (arr) => {
   let sum = 0;
   for (i = 0; i < arr.length; i++) {
@@ -237,6 +241,8 @@ const workye = (arr) => {
 };
 
 console.log(workye([5, 6, 99, 8, 76, 4, 68, 44, "hello"]));
+
+// *************************************************** OR *******************************************************************************
 
 function printTheSumOfArray(arr) {
   var sum = 0;
@@ -284,6 +290,7 @@ const subtracts = (array) => {
  	console.log(difference);
  };
 subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
+// *************************************************** OR *******************************************************************************
 
 // // // ibro7
 // function EvenOdd(arr) {
@@ -306,6 +313,7 @@ subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
 // 	console.log(`theresultis${result}`);
 // }
 // EvenOdd([5, 6, "abebe", 8, 7, 4, 68, 44]);
+// *************************************************** OR *******************************************************************************
 
 // let mihret = (arr) => {
 //   let sumEven = 0;
@@ -323,6 +331,8 @@ subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
 //   console.log(difference);
 // };
 // mihret([5, 6, 99, 8, 76, 4, 68, 44, 20, 55, 15]);
+
+// *************************************************** OR *******************************************************************************
 
 // function subtractTheSumOfOddNumbersFromTheSumOfEvenArray(arr){
 //     let oddNumbers=0
@@ -388,7 +398,7 @@ function evenIndex(arr) {
 // };
 // // bokore([11, "Sam", 3, 7, "car"]);
 
-// // another way
+// *************************************************** OR *******************************************************************************
 
 // const werke = (arr) => {
 //   for (i = 0; i < arr.length; i = i + 2) {
@@ -464,6 +474,8 @@ removeAdd();
 // }
 // removeAdd1();
 
+// *************************************************** OR *******************************************************************************
+
 // From Ibrahim to Everyone 06:34 PM
 // const arr = ['a', 'b', 'c', 'd'];
 
@@ -479,6 +491,8 @@ removeAdd();
 
 // arr;  ['a', 'b', 'c', 'd'];
 
+// *************************************************** OR *******************************************************************************
+
 // const bahruah = (sampleArray) => {
 //   //sampleArray.pop();
 //   //console.log(sampleArray);
@@ -486,6 +500,8 @@ removeAdd();
 //   console.log(sampleArray);
 // };
 // bahruah([5, 6, 99, 8, 76, 4, 68, 44]);
+
+// *************************************************** OR *******************************************************************************
 
 // let removeLastElementOfArrayAndAddNewValue = (sampleArray, x) => {
 //   for (i = 0; i < sampleArray.length; i++) {
@@ -518,6 +534,8 @@ removeAdd();
  	};
  sortElement([5, 6, 99, 8, 76, 4, 68, 44])
 
+// *************************************************** OR *******************************************************************************
+
 // function sortAnArrayAscendingOrder(sampleArray) {
 // 	for (i = 0; i < sampleArray.length; i++) {
 // 		sampleArray.sort((a, b) => a - b);
@@ -525,6 +543,8 @@ removeAdd();
 // 	}
 // }
 // sortAnArrayAscendingOrder([5, 6, 99, 8, 76, 4, 68, 44]);
+
+// *************************************************** OR *******************************************************************************
 
 // function maxarray(array) {
 // 	let max = 0
@@ -591,6 +611,7 @@ let evangadiClass = {
 // }
 // propertyOfTheObject()
 
+// *************************************************** OR *******************************************************************************
 // function propertyOfTheObject() {
 // for (let x in evangadiClass) {
 // 	if (x === "lengthOfCourse") {
@@ -615,15 +636,14 @@ let evangadiClass = {
 // // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the console
 // // ○ // Use an array method
 //=====================================================================================================================================
-// //OR
 
-// let addBootstrapToTopicCoverd =()=>{
-//     evangadiClass.topicsCovered.push("Bootstrap");
-//     console.log(evangadiClass.topicsCovered);
-// }
-// addBootstrapToTopicCoverd()
+ let addBootstrapToTopicCoverd =()=>{
+     evangadiClass.topicsCovered.push("Bootstrap");
+     console.log(evangadiClass.topicsCovered);
+ }
+ addBootstrapToTopicCoverd()
 
-// //OR
+// *************************************************** OR *******************************************************************************
 
 // for (let x in evangadiClass){
 //     if (x=== "topicCovered"){
@@ -632,12 +652,15 @@ let evangadiClass = {
 // }
 // console.log(evangadiClass.topicsCovered)
 
+// *************************************************** OR *******************************************************************************
+
 // let addBootstrapToTopicCoverd =()=>{
 //     evangadiClass.topicsCovered.push("Bootstrap");
 //     console.log(evangadiClass.topicsCovered);
 // }
 // addBootstrapToTopicCoverd()
 
+// ********************************************** print Average class Age ***************************************************************
 // const printAverageEvangadiClasAge = () => {
 //   //let ave;
 //   let sum = 0;
@@ -732,6 +755,8 @@ let evangadiClass = {
  }
  persentafeOfmale();
 
+// *************************************************** OR *******************************************************************************
+
 // function persentafeOfmale() {
 // 	let male = 0;
 // 	let totalStudents = evangadiClass.students.length;
@@ -765,7 +790,7 @@ let evangadiClass = {
  }
  lowHigh(1, 20)
 
-// if array
+// *************************************************** OR *******************************************************************************
 // function test_divisors(low, high) {
 // 	var output = [];
 // 	for (var i = low; i <= high; i++) {
@@ -778,7 +803,8 @@ let evangadiClass = {
 // 	return output;
 // }
 // console.log(test_divisors(2, 10));
-// //
+
+// *************************************************** OR *******************************************************************************
 
 // const lowAndHighNumber = (num1, num2) => {
 //   if (typeof num1 !== "number" && typeof num2 !== "number") {
@@ -810,7 +836,7 @@ let evangadiClass = {
 //   }
 // };
 // let div3 = lowAndHighNumber(2, 9);
-// //_____________
+
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 					//  Question 16: The famous coding interview question (FizzBuzz)
@@ -834,6 +860,8 @@ let evangadiClass = {
 //   }
 // }
 // print100()
+
+// *************************************************** OR *******************************************************************************
 
 // function FizzBuzz() {
 // 	for (let i = 0; i <= 100; i++)
@@ -876,7 +904,7 @@ let evangadiClass = {
 
 // isEven();
 
-//OR
+// *************************************************** OR *******************************************************************************
 
 // function getResult(n) {
 // 	var st = n.toString();
@@ -892,7 +920,7 @@ let evangadiClass = {
 // console.log(getResult(32244));
 // console.log(getResult(24266575849));
 
-// OR
+// *************************************************** OR *******************************************************************************
 
 // function isEvens(x) {
 //   if (typeof (x) !== "number") {
@@ -978,6 +1006,8 @@ evenElementOnEvenIndex([0, 1, 2, 3, 4]);
 // let first = evenIndexElement([1, 2, 3, 6, 4, 8])
 // console.log(first)
 
+// *************************************************** OR *******************************************************************************
+
 // function evenIndexElement(arr) {
 //     let result = []
 //     for (let i = 0; i < arr.length; i++){
@@ -990,7 +1020,7 @@ evenElementOnEvenIndex([0, 1, 2, 3, 4]);
 // let first = evenIndexElement([1, 2, 3, 6, 4, 8])
 // console.log(first)
 
-//  other way
+// *************************************************** OR *******************************************************************************
 
 // function evenIndexElement(arr) {
 //     let result = []
@@ -1004,7 +1034,7 @@ evenElementOnEvenIndex([0, 1, 2, 3, 4]);
 // let second = evenIndexElement([10, 2, 3, 6, 4, 8])
 // console.log(second)
 
-// other way
+// *************************************************** OR *******************************************************************************
 
 // function evenIndexElement(arr) {
 //     let result = []
@@ -1030,9 +1060,6 @@ evenElementOnEvenIndex([0, 1, 2, 3, 4]);
 // ○ reverseCompare(23) prints "Not ok", because 23 is not greater than 32
 //=====================================================================================================================================
 
-// Answer
-// **************************************
-
 function checkReversedValue(num) {
   let num1 = Math.round(num);
   if (num < 10) {
@@ -1054,7 +1081,7 @@ function checkReversedValue(num) {
 
 // console.log(checkReversedValue(2.2))
 
-//=====================================================================================================================================
+// *************************************************** OR *******************************************************************************
 
 // 2. function reev(n) {
 //     let rev = 0
@@ -1070,6 +1097,8 @@ function checkReversedValue(num) {
 // }
 // console.log(alert('hello'));
 
+// *************************************************** OR *******************************************************************************
+
 // function reev(n) {
 //     let reverse = 0
 //     let reminder
@@ -1082,6 +1111,8 @@ function checkReversedValue(num) {
 //     }
 // }
 // console.log(reev(72));
+
+// *************************************************** OR *******************************************************************************
 
 // function checkReverse(num) {
 //   if (typeof num == "number") {
