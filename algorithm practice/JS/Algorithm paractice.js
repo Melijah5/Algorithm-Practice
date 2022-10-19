@@ -1,8 +1,12 @@
- // alert(" Your js file is connect5ed")
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+					// All algorithm class collections
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+//=====================================================================================================================================
 // //Question 1
 
 // // ● Write a function that prints the first 10 integers on the console starting from the number 1 using the JavaScript for loop.
+//=====================================================================================================================================
 
 // // =============================
 // //         Answer
@@ -24,6 +28,7 @@ printFirstTenNumbers();
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+//=====================================================================================================================================
 // // Question 2
 // // ● Write a function that takes a single number as an argument and prints the next 5 numbers in the
 // // console. Note: each output should be displayed on a new line.
@@ -33,7 +38,7 @@ printFirstTenNumbers();
 // // 10
 // // 11
 // // 12
-
+//=====================================================================================================================================
 // // =============================
 // //         Answer
 // // =============================
@@ -69,13 +74,14 @@ var printNextFiveWhileLoop = (num) => {
   }
 };
 printNextFiveWhileLoop(10);
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // //Question 3
-
+//=====================================================================================================================================
 // // ● Write a function that takes a single number and prints the sum of the next 10 numbers after the
 // // given number.
 // // ○ Test case: If you give 7 to the function, output should be: 125 - because (8 + 9 + 10+ 11+ 12+ 13+ 14+ 15+ 16+ 17 = 125)
-
+//=====================================================================================================================================
 // // =============================
 // //         Answer
 // // =============================
@@ -117,8 +123,10 @@ const printSumOfTenNumbers = (num) => {
 };
 let result = printSumOfTenNumbers("op");
 console.log(result);
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+//=====================================================================================================================================
 // //Question 4
 // // ● Write a function that takes an array as an argument and prints every element of the array on the console.
 // // ○ Test case: given the array a = [1, "Hello", 8, 44], output should look like this:
@@ -126,6 +134,7 @@ console.log(result);
 // // Hello
 // // 8
 // // 44
+//=====================================================================================================================================
 
 // // =============================
 // //         Answer
@@ -145,12 +154,16 @@ for (let i of arr) {
 }
 let printAllArray = (i) => i;
 printAllArray();
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+//=====================================================================================================================================
 // //Question 5
-// // ● Write a function that takes an array as an argument and prints the total number of elements found in the array. Hint: use a property of the Array object to solve this question.
+// // ● Write a function that takes an array as an argument and prints the total number of elements found in the array. 
+// // Hint: use a property of the Array object to solve this question.
 // // ○ Test case 1: Given the array a = [1, "Hello", 8, 44], output should be: 4
 // // ○ Test case 2: Given the array a = ["world", 13], output should be: 2
+//=====================================================================================================================================
 
 // // =============================
 // //         Answer
@@ -167,7 +180,7 @@ function findLengthOfArray(myArray) {
 findLengthOfArray([2, "hello", "my", "name is", "kidus"]);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 6
 // //     ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
 // //     all the numbers in the array.
@@ -175,7 +188,7 @@ findLengthOfArray([2, "hello", "my", "name is", "kidus"]);
 // //     should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
 // //     ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // //     3 + 0
-
+//=====================================================================================================================================
 // // =============================
 // //         Answer
 // // =============================
@@ -240,14 +253,16 @@ function printTheSumOfArray(arr) {
 }
 printTheSumOfArray([10, 20, 30]);
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 7
-// //     ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all  odd numbers of the array from the total sum of all even numbers and logs the result in the console.
+// //     ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all  odd numbers 
+// //    of the array from the total sum of all even numbers and logs the result in the console.
 // // ○ Test case: If you give these array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
 // //     should be: 102
 // //     ■ Sum of odd numbers: 5 + 99 = 104
 // //     ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
 // //     ■ Difference between total even and total odd numbers: 206 - 104 = 102
+//=====================================================================================================================================
 
 // // =============================
 // //         Answer
@@ -332,7 +347,7 @@ subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
 // subtractTheSumOfOddNumbersFromTheSumOfEvenArray([21,30,40,11,33,13,22])
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 8
 // //     ● Write a function that takes an array as a parameter and logs in the console the elements that have
 // //     even indexes only. Notice: this question is not asking you to log elements with even value, but
@@ -348,7 +363,7 @@ subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
 // //     11
 // //     3
 // //     car
-
+//=====================================================================================================================================
 function evenIndex(arr) {
  	for (let i = 0; i <= arr.length; i++) {
  		if (i % 2 == 0) {
@@ -415,14 +430,14 @@ function evenIndex(arr) {
 // printValueOfEvenINdexesFromArray([10,20,"kidus",52,58,77,"done"])
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Questions 9 and 10 are dependent on the sampleArray provided below:
 // // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 // // Question 9
 // // Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
+//=====================================================================================================================================
 
-// //////////////////////////////
 
  let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 
@@ -475,12 +490,12 @@ removeAdd();
 // removeLastElementOfArrayAndAddNewValue([5, 6, 99, 8, 76, 4, 68, 44], 32);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // //  Question 10
 // //     ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order and prints the sorted array on the console Use the sort method. Make sure you understand just using the sort() method alphabetically.
 // //     You should use this sorting syntax -
 // // sort(function (a, b) { return a - b });
-
+//=====================================================================================================================================
  function sortElement(sampleArray) {
  	for (let i = 0; i < sampleArray.length; i++) {
 
@@ -509,6 +524,7 @@ removeAdd();
 // }
 // console.log(maxarray([5, 6, 99, 8, 76, 4, 68, 44]));
 
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Questions on JavaScript objects
 // // *********************************
 // // The questions below ( questions 11 to 14) are based on the "evangadiClass" object provided below.
@@ -548,12 +564,12 @@ let evangadiClass = {
 };
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 11
 // // ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
 // // console
 // // ○ // Use the dot notation "." to call the property you want to change
-
+//=====================================================================================================================================
 // function propertyOfTheObject() {
 // 	let n=evangadiClass.lengthOfCourse = "5 month";
 // 	console.log(n);
@@ -580,11 +596,11 @@ let evangadiClass = {
 // changeLentgthOfCoursTo5Month();
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-// // Question 12
+//=====================================================================================================================================
+					// // Question 12
 // // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the console
 // // ○ // Use an array method
-
+//=====================================================================================================================================
 // //OR
 
 // let addBootstrapToTopicCoverd =()=>{
@@ -639,10 +655,10 @@ let evangadiClass = {
 // pritAverageAgeFromEvangadiStundents();
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 13
 // // ● Write a function that takes the "evangadiClass" object as an argument and calculates the average age of the class. Print the result on the console
-
+//=====================================================================================================================================
  const pritAverageAgeFromEvangadiStundents = () => {
    let avg;
    let sum = 0;
@@ -683,8 +699,9 @@ let evangadiClass = {
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Question 14
-// // ● Write a function that takes the "evangadiClass" object as an argument and calculates the percentage of male students in the class. Print the result on the console
-
+// // ● Write a function that takes the "evangadiClass" object as an argument and calculates the percentage of male students in the class. 
+// //Print the result on the console
+//=====================================================================================================================================
  function persentafeOfmale() {
  	let male = 0;
  	let totalStudents = evangadiClass.students.length
@@ -779,10 +796,11 @@ let evangadiClass = {
 // //_____________
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 16: The famous coding interview question (FizzBuzz)
-//  ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz” and fo numbers which are multiples of both three and five print "FizzBuzz".
-
+//  ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number
+// // and for the multiples of five print “Buzz” and fo numbers which are multiples of both three and five print "FizzBuzz".
+//=====================================================================================================================================
 // function print100(x) {
 //   for (let i = 1; i < 100; i++) {
 //         if (i % 3 == 0 && i%5 == 0) {
@@ -808,12 +826,12 @@ let evangadiClass = {
 // FizzBuzz();
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+//=====================================================================================================================================
 // // Question 19: Evens number
 // //     ● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
 // //     number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
 // //     integer argument is an Evens number. The function prints 0 otherwise.
-
+//=====================================================================================================================================
 // function isEven(x) {
 // 	let oddCounter = 0;
 // 	let myNumber = x.toString();
@@ -1243,7 +1261,7 @@ function MeeraArr(arr) {
 
 // console.log(MeeraArr([10, 4, 0, 5]))
 
-/********************************************************** */
+// *******************************************************************************************************************
 
 function isMarra(arr) {
   if (!Array.isArray(arr)) {
@@ -1264,7 +1282,7 @@ function isMarra(arr) {
 
 // console.log(isMerra([10, 4, 0, 5]))
 
-/********************************************************** */
+// *******************************************************************************************************************
 
 // function meeraArray(arr) {
 //     if (arr.length === 0) {
@@ -1535,7 +1553,7 @@ function second(sec) {
 
 console.log(second(5624));
 
-// ***************
+// *******************************************************************************************************************
 
 // var sec_num = parseInt(sec);
 // var hours = Math.floor(sec_num / 3600);
@@ -1628,7 +1646,7 @@ findNumber([1, 2, 3, 4, 5]);
 
 // Time complexity - O(n)
 
-//********************************************************* */
+// *******************************************************************************************************************
 
 function findNumber1(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -1867,7 +1885,7 @@ function findDup2(arr) {
 }
 console.log(findDup2([5, 1, 4, 3, 1, 2, 3]));
 
-//*********************************************************************** */
+// *******************************************************************************************************************
 
 // arr = [5, 1, 4, 3, 1, 2, 3]
 
@@ -1896,13 +1914,13 @@ console.log(findDup2([5, 1, 4, 3, 1, 2, 3]));
 
 // console.log(findDup3([5, 1, 4, 3, 1, 2, 3]))
 
-//****************************************************************************************************************** */
+// *******************************************************************************************************************
 // 2. reverse the whole string ?
 //     I / p = "I love icecream"
 
 //     O / p = "maerceci evol I"
 
-//******For loop ************************************************************************************************************ */
+//******For loop **************************************************************************************************** */
 
 function reverseString(str) {
   let reverse = "";
@@ -1917,14 +1935,14 @@ reverseString("I love icecream");
 // Time complexity - O(n)
 //Space Complexity - O(1)
 
-//***  recursion  ********************************************************************************************* */
+//***  recursion  *************************************************************************************************** */
 function reverseString(str) {
   if (str === "") return "";
   else return reverseString(str.substr(1)) + str.charAt(0);
 }
 console.log(reverseString("hello"));
 
-//********* built in method ********************************************************************************** */
+//********* built in method ***************************************************************************************** */
 
 function reverseString(str) {
   return str.split("").reverse().join("");
@@ -2102,7 +2120,7 @@ function checkHideWord(x) {
 // // console.log(hiddemWord("HbHIIeYIYIHtYHEUtHy"));
 
 // //
-//******************************************************************************************* */
+// *******************************************************************************************************************
 
 // 2. Create a function that returns true if the first array can be nested inside the second.
 //     Given: -[1, 2, 3, 4], [0, 6] - true
@@ -2170,9 +2188,7 @@ function canNest(arr1, arr2) {
 // nestOrNot([9, 9, 8], [8, 9])
 // nestOrNot([1, 2, 3, 4], [0, 6])
 
-//******************************************************************************************* */
-
-//******************************************************************************************* */
+// *******************************************************************************************************************
 
 // 4. sort
 
@@ -2192,7 +2208,7 @@ const sorting = (arr) => {
 
 // console.log(sorting([5, 6, 99, 8, 76, 4, 68, 44]))
 
-//******************************************************************************************* */
+// *******************************************************************************************************************
 
 // 5. Find the Equilibrium index
 
