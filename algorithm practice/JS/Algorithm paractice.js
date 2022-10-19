@@ -1,4 +1,4 @@
-// // alert(" Your js file is connect5ed")
+ // alert(" Your js file is connect5ed")
 
 // //Question 1
 
@@ -22,7 +22,7 @@ function printFirstTenNumbers() {
 }
 printFirstTenNumbers();
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 2
 // // ● Write a function that takes a single number as an argument and prints the next 5 numbers in the
@@ -69,7 +69,7 @@ var printNextFiveWhileLoop = (num) => {
   }
 };
 printNextFiveWhileLoop(10);
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // //Question 3
 
 // // ● Write a function that takes a single number and prints the sum of the next 10 numbers after the
@@ -117,7 +117,7 @@ const printSumOfTenNumbers = (num) => {
 };
 let result = printSumOfTenNumbers("op");
 console.log(result);
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // //Question 4
 // // ● Write a function that takes an array as an argument and prints every element of the array on the console.
@@ -145,7 +145,7 @@ for (let i of arr) {
 }
 let printAllArray = (i) => i;
 printAllArray();
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // //Question 5
 // // ● Write a function that takes an array as an argument and prints the total number of elements found in the array. Hint: use a property of the Array object to solve this question.
@@ -166,7 +166,7 @@ function findLengthOfArray(myArray) {
 }
 findLengthOfArray([2, "hello", "my", "name is", "kidus"]);
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 6
 // //     ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
@@ -239,7 +239,7 @@ function printTheSumOfArray(arr) {
   console.log(sum);
 }
 printTheSumOfArray([10, 20, 30]);
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 7
 // //     ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all  odd numbers of the array from the total sum of all even numbers and logs the result in the console.
@@ -253,22 +253,23 @@ printTheSumOfArray([10, 20, 30]);
 // //         Answer
 // // =============================
 
-// const subtracts = (array) => {
-// 	let sumEven = 0;
-// 	let sumOdd = 0;
+const subtracts = (array) => {
+ 	let sumEven = 0;
+ 	let sumOdd = 0;
 
-// 	for (let i = 0; i < array.length; i++) {
-// 		// let difference = sumEven - sumOdd;
-// 		if (array[i] % 2 == 0) {
-// 			sumEven = sumEven + array[i];
-// 		} else {
-// 			sumOdd = sumOdd + array[i];
-// 		}
-// 	}
-// 	let difference = sumEven - sumOdd;
-// 	console.log(difference);
-// };
-// subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
+ 	for (let i = 0; i < array.length; i++) {
+ 		// let difference = sumEven - sumOdd;
+ 		if (array[i] % 2 == 0) {
+ 			sumEven = sumEven + array[i];
+ 		} else {
+ 			sumOdd = sumOdd + array[i];
+ 		}
+ 	}
+ 	let difference = sumEven - sumOdd;
+ 	console.log(difference);
+ };
+subtracts([5, 6, 99, 8, 76, 4, 68, 44]);
+
 // // // ibro7
 // function EvenOdd(arr) {
 // 	let evenTotal = 0;
@@ -330,7 +331,7 @@ printTheSumOfArray([10, 20, 30]);
 // }
 // subtractTheSumOfOddNumbersFromTheSumOfEvenArray([21,30,40,11,33,13,22])
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 8
 // //     ● Write a function that takes an array as a parameter and logs in the console the elements that have
@@ -348,15 +349,15 @@ printTheSumOfArray([10, 20, 30]);
 // //     3
 // //     car
 
-// function evenIndex(arr) {
-// 	for (let i = 0; i <= arr.length; i++) {
-// 		if (i % 2 == 0) {
-// 			console.log(arr[i]);
-// 		}
-// 	}
-// }
-// // evenIndex([11, "Sam", 3, 7, "car"]);
-// evenIndex("Marew");
+function evenIndex(arr) {
+ 	for (let i = 0; i <= arr.length; i++) {
+ 		if (i % 2 == 0) {
+ 			console.log(arr[i]);
+ 		}
+ 	}
+ }
+ evenIndex([11, "Sam", 3, 7, "car"]);
+ evenIndex("Marew");
 
 // const bokore = (arr) => {
 //   for (i = 0; i < arr.length; i++) {
@@ -413,7 +414,7 @@ printTheSumOfArray([10, 20, 30]);
 // }
 // printValueOfEvenINdexesFromArray([10,20,"kidus",52,58,77,"done"])
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Questions 9 and 10 are dependent on the sampleArray provided below:
 // // let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
@@ -423,15 +424,15 @@ printTheSumOfArray([10, 20, 30]);
 
 // //////////////////////////////
 
-// let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+ let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 
-// function removeAdd() {
-// 	sampleArray.pop();
-// 	console.log(sampleArray);
-// 	sampleArray.push(32);
-// 	console.log(sampleArray);
-// }
-// removeAdd();
+ function removeAdd() {
+ 	sampleArray.pop();
+ 	console.log(sampleArray);
+ 	sampleArray.push(32);
+ 	console.log(sampleArray);
+ }
+removeAdd();
 // //oR
 // function removeAdd1() {
 // 	sampleArray.splice(sampleArray.length - 1, 1, 32);
@@ -473,20 +474,20 @@ printTheSumOfArray([10, 20, 30]);
 // };
 // removeLastElementOfArrayAndAddNewValue([5, 6, 99, 8, 76, 4, 68, 44], 32);
 
-// //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // //  Question 10
 // //     ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order and prints the sorted array on the console Use the sort method. Make sure you understand just using the sort() method alphabetically.
 // //     You should use this sorting syntax -
 // // sort(function (a, b) { return a - b });
 
-// function sortElement(sampleArray) {
-// 	for (let i = 0; i < sampleArray.length; i++) {
+ function sortElement(sampleArray) {
+ 	for (let i = 0; i < sampleArray.length; i++) {
 
-// 	}
-// 	console.log(sampleArray.sort((a, b) => a - b));
-// 	};
-// sortElement([5, 6, 99, 8, 76, 4, 68, 44])
+ 	}
+ 	console.log(sampleArray.sort((a, b) => a - b));
+ 	};
+ sortElement([5, 6, 99, 8, 76, 4, 68, 44])
 
 // function sortAnArrayAscendingOrder(sampleArray) {
 // 	for (i = 0; i < sampleArray.length; i++) {
@@ -546,7 +547,7 @@ let evangadiClass = {
   ],
 };
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 11
 // // ● Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
@@ -578,7 +579,7 @@ let evangadiClass = {
 // };
 // changeLentgthOfCoursTo5Month();
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 12
 // // ● Add "Bootstrap" at the end of the topicsCovered property and print the new object on the console
@@ -637,25 +638,25 @@ let evangadiClass = {
 // };
 // pritAverageAgeFromEvangadiStundents();
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 13
 // // ● Write a function that takes the "evangadiClass" object as an argument and calculates the average age of the class. Print the result on the console
 
-// const pritAverageAgeFromEvangadiStundents = () => {
-//   let avg;
-//   let sum = 0;
-//   let arrLenth = evangadiClass.students.length;
-//   for (let i = 0; i < arrLenth; i++) {
-//     sum += evangadiClass.students[i].age;
-//     avg = sum / arrLenth;
-//     console.log(sum);
-//   }
+ const pritAverageAgeFromEvangadiStundents = () => {
+   let avg;
+   let sum = 0;
+   let arrLenth = evangadiClass.students.length;
+   for (let i = 0; i < arrLenth; i++) {
+     sum += evangadiClass.students[i].age;
+     avg = sum / arrLenth;
+     console.log(sum);
+   }
 
-//   console.log(sum);
-//   console.log(avg);
-// };
-// pritAverageAgeFromEvangadiStundents();
+   console.log(sum);
+   console.log(avg);
+ };
+ pritAverageAgeFromEvangadiStundents();
 
 // function ageAvg() {
 //   let totalAge = 0
@@ -680,23 +681,23 @@ let evangadiClass = {
 // }
 // averageAge()
 
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Question 14
 // // ● Write a function that takes the "evangadiClass" object as an argument and calculates the percentage of male students in the class. Print the result on the console
 
-// function persentafeOfmale() {
-// 	let male = 0;
-// 	let totalStudents = evangadiClass.students.length
-// 	for (let i = 0; i < totalStudents; i++) {
-// 		if (evangadiClass.students[i].sex == "M") {
-// 			male++;
-// 		}
+ function persentafeOfmale() {
+ 	let male = 0;
+ 	let totalStudents = evangadiClass.students.length
+ 	for (let i = 0; i < totalStudents; i++) {
+ 		if (evangadiClass.students[i].sex == "M") {
+ 			male++;
+ 		}
 
-// 	}
-// 	let percentage = (male / totalStudents)*100
-// 	console.log(percentage);
-// }
-// persentafeOfmale();
+ 	}
+ 	let percentage = (male / totalStudents)*100
+ 	console.log(percentage);
+ }
+ persentafeOfmale();
 
 // function persentafeOfmale() {
 // 	let male = 0;
@@ -711,24 +712,24 @@ let evangadiClass = {
 // }
 // persentafeOfmale();
 
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 15: Test the divisors of three
 // //     ● Write a function that takes 2 parameters: a low and high number. Your goal is to print all
 // //     numbers (on the console) between low and high, and for each of these numbers print
 // //     whether or not the number is divisible by 3. If the number is divisible by 3, print the word "div3" directly after the number.
 
-// function lowHigh(low, high) {
-//   for (let i = low; i < high; i++) {
-//     if (i%3==0) {
-//       console.log(i, "is div by 3")
-//     } else {
-//       console.log(i)
-//     }
+ function lowHigh(low, high) {
+   for (let i = low; i < high; i++) {
+     if (i%3==0) {
+       console.log(i, "is div by 3")
+     } else {
+       console.log(i)
+     }
 
-//   }
-// }
-// lowHigh(1, 20)
+   }
+ }
+ lowHigh(1, 20)
 
 // if array
 // function test_divisors(low, high) {
@@ -777,7 +778,7 @@ let evangadiClass = {
 // let div3 = lowAndHighNumber(2, 9);
 // //_____________
 
-// /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 16: The famous coding interview question (FizzBuzz)
 //  ● Write a function that prints in the console the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz” and fo numbers which are multiples of both three and five print "FizzBuzz".
@@ -806,7 +807,7 @@ let evangadiClass = {
 // }
 // FizzBuzz();
 
-// //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // // Question 19: Evens number
 // //     ● An Evens number is an integer whose digits are all even. For example 2426 is an Evens
@@ -874,12 +875,12 @@ let evangadiClass = {
 // }
 // console.log(isEvens(3224));
 
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Advanced JavaScript Algorithms - practice exercise
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					// Advanced JavaScript Algorithms - practice exercise
 
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // Question 1
 //************************************************* */
@@ -986,9 +987,9 @@ evenElementOnEvenIndex([0, 1, 2, 3, 4]);
 // }
 // let first = evenIndexElement([1, 2, 3, 6, 4, 8])
 // console.log(first)
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Question 2
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							// Question 2
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ● Create a function that takes a two-digit number as an parameter and prints "Ok" in
 // the console if the given string is greater than its reversed digit version. If not, the
 // function will print "Not ok"
@@ -1065,9 +1066,9 @@ function checkReversedValue(num) {
 //   }
 // }
 // console.log(checkReverse(7.2));
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Question 3
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						// Question 3
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ● Write a function that takes a positive integer and returns the factorial of the number.
 // Notes: The factorial of 0 is 1. Ex: factorial seven is : 1 × 2 × 3 × 4 × 5 × 6 × 7. The
 // factorial of any positive integer x is x * (x - 1) * (x - 2) * . . . . . . * 1 (ex: factorial of 4 is
@@ -1189,9 +1190,9 @@ function factorial(n) {
 //     }
 // }
 // console.log(factor(6))
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Question 4 (Meera array)
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						// Question 4 (Meera array)
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ● A Meera array is defined to be an array containing only numbers as its elements and for
 // all n values in the array, the value n*2 is not in the array. So [3, 5, -2] is a Meera array
 // because 3*2, 5*2 or 2*2 are not in the array. But [8, 3, 4] is not a Meera array because
@@ -1314,9 +1315,9 @@ function isMarra(arr) {
 //   return "i am meera array";
 // }
 
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Question 5 (Dual array)
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						// Question 5 (Dual array)
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // ● Define a Dual array to be an array where every value occurs exactly twice. For example,
 // {1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5
@@ -1500,9 +1501,9 @@ console.log(dualArray([1, 1, 2, 2, 2, 3]));
 // }
 
 // console.log(dualArray([1, 1, 2, 2, 2, 3]));
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Question 6
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							// Question 6
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // ● Write a function that takes the number of seconds and returns the digital format clock
 // time as a string. Time should be counted from 00:00:00.
@@ -1588,9 +1589,9 @@ console.log(second(5624));
 // }
 // digital(200)
 
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// Aditional Questions on Algorithm
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					// Aditional Questions on Algorithm
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 //  Find the Smallest and Biggest Numbers
 
@@ -2015,9 +2016,9 @@ console.log(KSmallerNumber([7, 10, 4, 3, 20, 15], 3));
 
 // Time complexity - O(nlogn)
 
-//******************************************************************************************* */
-//                              Advanced Algorithm Collection
-//******************************************************************************************* */
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//    			                          Advanced Algorithm Collection
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 // 1. find the hidden word in the crowd.
 // hide words - small letter
