@@ -2572,3 +2572,9 @@ console.log(oddIntgers());
 // 13.  Write a function that prints the firstgit 10 integers on the console starting from the number 1 using the JavaScript for loop
 
 // 14. Write a function that takes a single number as an argument and prints the next 5 numbers in the console. Note: each output should be displayed on a new line.
+
+
+Big O Notation:
+The Big O notation defines an upper bound for an algorithm by bounding a function from above. Consider the situation of insertion sort: 
+in the best case scenario, it takes linear time, and in the worst case, it takes quadratic time. Insertion sort has a time complexity O(n^2). 
+It is useful when we just have an upper constraint on an algorithm's time complexity.
