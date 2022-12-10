@@ -2573,6 +2573,37 @@ console.log(oddIntgers());
 
 // 14. Write a function that takes a single number as an argument and prints the next 5 numbers in the console. Note: each output should be displayed on a new line.
 
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			Interview
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			
+			find remove the duplicate value ... two diminstional array
+
+const arr = [
+   [1,2,3,4,5],
+   [3,4,6,7,8,2],
+   [7,2,4,9,11,15],
+   [10,12,3,7,11]
+];
+const removeDuplicates = arr => {
+   let map = {};
+   let res = [];
+   res = arr.map(el => {
+      return el.filter(val => {
+         if(map[val]){
+            return false;
+         };
+         map[val] = 1;
+         return true;
+      });
+   });
+   return res;
+};
+console.log(removeDuplicates(arr));
+
+
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Big O Notation:
 The Big O notation defines an upper bound for an algorithm by bounding a function from above. Consider the situation of insertion sort: 
