@@ -2577,7 +2577,7 @@ console.log(oddIntgers());
 			Interview
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
-			find remove the duplicate value ... two diminstional array
+			find and remove the duplicate value ... two diminstional array
 
 const arr = [
    [1,2,3,4,5],
